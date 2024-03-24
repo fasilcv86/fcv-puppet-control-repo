@@ -2,4 +2,4 @@
 message: "This node is using common data"
 
 classes:
-  - role::webserver
+  - profile::base
