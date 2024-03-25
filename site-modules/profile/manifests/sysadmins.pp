@@ -8,8 +8,14 @@ class profile::sysadmins {
 
 
   user { 'fasil.test':
-    ensure => present,
+    ensure => absent,
     uid    => '9999',
     groups => 'sysadmins',
+
+  user { 'fasil.admin':
+    ensure => present,
+    uid    => '9992',
+    groups => 'sysadmins',
+
   }
 }
