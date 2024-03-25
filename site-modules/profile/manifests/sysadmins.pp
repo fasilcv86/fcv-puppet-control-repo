@@ -16,6 +16,6 @@ class profile::sysadmins {
     ensure => present,
     uid    => '9992',
     groups => 'sysadmins',
-
+   }
   }
 }
