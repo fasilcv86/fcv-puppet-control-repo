@@ -11,11 +11,10 @@ class profile::sysadmins {
     ensure => absent,
     uid    => '9999',
     groups => 'sysadmins',
-
+  }
   user { 'fasil.admin':
     ensure => present,
     uid    => '9992',
     groups => 'sysadmins',
-   }
   }
 }
